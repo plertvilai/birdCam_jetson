@@ -1,0 +1,1091 @@
+2021-04-13 19:15:45.560864: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.2
+2021-04-13 19:16:58.016769: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-04-13 19:16:58.055630: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-04-13 19:16:58.055792: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1742] Found device 0 with properties: 
+pciBusID: 0000:00:00.0 name: NVIDIA Tegra X1 computeCapability: 5.3
+coreClock: 0.9216GHz coreCount: 1 deviceMemorySize: 3.87GiB deviceMemoryBandwidth: 194.55MiB/s
+2021-04-13 19:16:58.055905: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.2
+2021-04-13 19:16:58.219836: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-04-13 19:16:58.293426: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-04-13 19:16:58.401166: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-04-13 19:16:58.533555: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-04-13 19:16:58.606679: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-04-13 19:16:58.610380: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-04-13 19:16:58.610797: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-04-13 19:16:58.611079: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-04-13 19:16:58.611153: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1884] Adding visible gpu devices: 0
+2021-04-13 19:16:58.637246: W tensorflow/core/platform/profile_utils/cpu_utils.cc:108] Failed to find bogomips or clock in /proc/cpuinfo; cannot determine CPU frequency
+2021-04-13 19:16:58.638069: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x11054920 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-04-13 19:16:58.638137: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-04-13 19:16:58.751948: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-04-13 19:16:58.752427: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0xff8a2a0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-04-13 19:16:58.752482: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA Tegra X1, Compute Capability 5.3
+2021-04-13 19:16:58.775938: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-04-13 19:16:58.776089: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1742] Found device 0 with properties: 
+pciBusID: 0000:00:00.0 name: NVIDIA Tegra X1 computeCapability: 5.3
+coreClock: 0.9216GHz coreCount: 1 deviceMemorySize: 3.87GiB deviceMemoryBandwidth: 194.55MiB/s
+2021-04-13 19:16:58.776274: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.2
+2021-04-13 19:16:58.776398: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-04-13 19:16:58.776485: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-04-13 19:16:58.776563: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-04-13 19:16:58.776637: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-04-13 19:16:58.776746: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-04-13 19:16:58.776826: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-04-13 19:16:58.777083: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-04-13 19:16:58.777356: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-04-13 19:16:58.777433: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1884] Adding visible gpu devices: 0
+2021-04-13 19:16:58.777569: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.2
+2021-04-13 19:17:03.920129: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1283] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-04-13 19:17:03.920224: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1289]      0 
+2021-04-13 19:17:03.920257: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1302] 0:   N 
+2021-04-13 19:17:03.920782: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-04-13 19:17:03.921091: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-04-13 19:17:03.921235: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1428] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1474 MB memory) -> physical GPU (device: 0, name: NVIDIA Tegra X1, pci bus id: 0000:00:00.0, compute capability: 5.3)
+-------BirdCam program----------
+Initializing output folder...
+Found images folder
+Found images folder
+Found images folder
+Found bird_00 folder
+Found bird_01 folder
+Found bird_02 folder
+Found bird_03 folder
+Done Initializing folder.
+Initializing BirdCam...
+Loading TensorRT model. This might take a while...
+Start loading TRT model /home/pichaya/birdCam_ML/birdCam_MobileNetV2_20210316_TFTRT_FP16
+Finished loading model in 208.41 s
+['serving_default']
+{'dense': TensorSpec(shape=(None, 4), dtype=tf.float32, name='dense')}
+Traceback (most recent call last):
+  File "birdCam_ML_04.py", line 116, in <module>
+    birdCam.initCNN(init_im_path) #initialize CNN model
+  File "/home/pichaya/birdCam_ML/birdCam_jetson_ml.py", line 211, in initCNN
+    img = image.load_img(init_im_path, target_size=(224, 224))
+  File "/usr/local/lib/python3.6/dist-packages/tensorflow/python/keras/preprocessing/image.py", line 301, in load_img
+    target_size=target_size, interpolation=interpolation)
+  File "/usr/local/lib/python3.6/dist-packages/keras_preprocessing/image/utils.py", line 111, in load_img
+    raise ImportError('Could not import PIL.Image. '
+ImportError: Could not import PIL.Image. The use of `load_img` requires PIL.
+2021-04-13 19:22:45.125444: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.2
+2021-04-13 19:23:57.114273: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-04-13 19:23:57.152905: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-04-13 19:23:57.153084: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1742] Found device 0 with properties: 
+pciBusID: 0000:00:00.0 name: NVIDIA Tegra X1 computeCapability: 5.3
+coreClock: 0.9216GHz coreCount: 1 deviceMemorySize: 3.87GiB deviceMemoryBandwidth: 194.55MiB/s
+2021-04-13 19:23:57.153205: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.2
+2021-04-13 19:23:57.182111: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-04-13 19:23:57.198853: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-04-13 19:23:57.242523: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-04-13 19:23:57.261846: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-04-13 19:23:57.278041: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-04-13 19:23:57.278796: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-04-13 19:23:57.279171: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-04-13 19:23:57.279489: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-04-13 19:23:57.279568: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1884] Adding visible gpu devices: 0
+2021-04-13 19:23:57.316320: W tensorflow/core/platform/profile_utils/cpu_utils.cc:108] Failed to find bogomips or clock in /proc/cpuinfo; cannot determine CPU frequency
+2021-04-13 19:23:57.316966: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0xa7cd6f0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-04-13 19:23:57.317029: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-04-13 19:23:57.437939: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-04-13 19:23:57.438241: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x97869a0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-04-13 19:23:57.438296: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA Tegra X1, Compute Capability 5.3
+2021-04-13 19:23:57.438800: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-04-13 19:23:57.438912: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1742] Found device 0 with properties: 
+pciBusID: 0000:00:00.0 name: NVIDIA Tegra X1 computeCapability: 5.3
+coreClock: 0.9216GHz coreCount: 1 deviceMemorySize: 3.87GiB deviceMemoryBandwidth: 194.55MiB/s
+2021-04-13 19:23:57.439082: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.2
+2021-04-13 19:23:57.439199: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-04-13 19:23:57.439278: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-04-13 19:23:57.439348: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-04-13 19:23:57.439415: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-04-13 19:23:57.439479: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-04-13 19:23:57.439544: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-04-13 19:23:57.439764: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-04-13 19:23:57.440000: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-04-13 19:23:57.440065: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1884] Adding visible gpu devices: 0
+2021-04-13 19:23:57.440185: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.2
+2021-04-13 19:24:01.770043: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1283] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-04-13 19:24:01.770156: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1289]      0 
+2021-04-13 19:24:01.770189: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1302] 0:   N 
+2021-04-13 19:24:01.770735: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-04-13 19:24:01.771059: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1046] ARM64 does not support NUMA - returning NUMA node zero
+2021-04-13 19:24:01.771205: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1428] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1260 MB memory) -> physical GPU (device: 0, name: NVIDIA Tegra X1, pci bus id: 0000:00:00.0, compute capability: 5.3)
+2021-04-13 19:26:20.786780: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-04-13 19:26:23.513043: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+GST_ARGUS: Creating output stream
+CONSUMER: Waiting until producer is connected...
+GST_ARGUS: Available Sensor modes :
+GST_ARGUS: 3264 x 2464 FR = 21.000000 fps Duration = 47619048 ; Analog Gain range min 1.000000, max 10.625000; Exposure Range min 13000, max 683709000;
+
+GST_ARGUS: 3264 x 1848 FR = 28.000001 fps Duration = 35714284 ; Analog Gain range min 1.000000, max 10.625000; Exposure Range min 13000, max 683709000;
+
+GST_ARGUS: 1920 x 1080 FR = 29.999999 fps Duration = 33333334 ; Analog Gain range min 1.000000, max 10.625000; Exposure Range min 13000, max 683709000;
+
+GST_ARGUS: 1640 x 1232 FR = 29.999999 fps Duration = 33333334 ; Analog Gain range min 1.000000, max 10.625000; Exposure Range min 13000, max 683709000;
+
+GST_ARGUS: 1280 x 720 FR = 59.999999 fps Duration = 16666667 ; Analog Gain range min 1.000000, max 10.625000; Exposure Range min 13000, max 683709000;
+
+GST_ARGUS: 1280 x 720 FR = 120.000005 fps Duration = 8333333 ; Analog Gain range min 1.000000, max 10.625000; Exposure Range min 13000, max 683709000;
+
+GST_ARGUS: Running with following settings:
+   Camera index = 0 
+   Camera mode  = 5 
+   Output Stream W = 1280 H = 720 
+   seconds to Run    = 0 
+   Frame Rate = 120.000005 
+GST_ARGUS: Setup Complete, Starting captures for 0 seconds
+GST_ARGUS: Starting repeat capture requests.
+CONSUMER: Producer has connected; continuing.
+[ WARN:0] global /home/nvidia/host/build_opencv/nv_opencv/modules/videoio/src/cap_gstreamer.cpp (933) open OpenCV | GStreamer warning: Cannot query video position: status=0, value=-1, duration=-1
+-------BirdCam program----------
+Initializing output folder...
+Found images folder
+Found images folder
+Found images folder
+Found bird_00 folder
+Found bird_01 folder
+Found bird_02 folder
+Found bird_03 folder
+Done Initializing folder.
+Initializing BirdCam...
+Loading TensorRT model. This might take a while...
+Start loading TRT model /home/pichaya/birdCam_ML/birdCam_MobileNetV2_20210316_TFTRT_FP16
+Finished loading model in 204.82 s
+['serving_default']
+{'dense': TensorSpec(shape=(None, 4), dtype=tf.float32, name='dense')}
+Start loading inference
+Finished loading inference in 24.69 s
+Initialize gstreamer
+nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)1280, height=(int)720, format=(string)NV12, framerate=(fraction)30/1 ! nvvidconv flip-method=0 ! video/x-raw, width=(int)1280, height=(int)720, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink max-buffers=60 drop=True
+Successfully initialize camera stream.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+Finished calibrating background
+Blank: 1.00
+31
+Blank: 1.00
+32
+Blank: 1.00
+33
+Blank: 1.00
+34
+Blank: 1.00
+35
+Blank: 1.00
+36
+Blank: 1.00
+37
+Blank: 1.00
+38
+Blank: 1.00
+39
+Blank: 1.00
+40
+Blank: 1.00
+41
+Blank: 1.00
+42
+Blank: 1.00
+43
+Blank: 1.00
+44
+Blank: 1.00
+45
+Blank: 1.00
+46
+Blank: 1.00
+47
+Blank: 1.00
+48
+Blank: 1.00
+49
+Blank: 1.00
+50
+Blank: 1.00
+51
+Blank: 1.00
+52
+Blank: 1.00
+53
+Blank: 1.00
+54
+Blank: 1.00
+55
+Blank: 1.00
+56
+Blank: 1.00
+57
+Blank: 1.00
+58
+Blank: 1.00
+59
+Blank: 1.00
+60
+Blank: 1.00
+61
+Blank: 1.00
+62
+Blank: 1.00
+63
+Blank: 1.00
+64
+Blank: 1.00
+65
+Blank: 1.00
+66
+Blank: 1.00
+67
+Blank: 1.00
+68
+Blank: 1.00
+69
+Blank: 1.00
+70
+Blank: 1.00
+71
+Blank: 1.00
+72
+Blank: 1.00
+73
+Blank: 1.00
+74
+Blank: 1.00
+75
+Blank: 1.00
+76
+Blank: 1.00
+77
+Blank: 1.00
+78
+Blank: 1.00
+79
+Blank: 1.00
+80
+Blank: 1.00
+81
+Blank: 1.00
+82
+Blank: 1.00
+83
+Blank: 1.00
+84
+Blank: 1.00
+85
+Blank: 1.00
+86
+Blank: 1.00
+87
+Blank: 1.00
+88
+Blank: 1.00
+89
+Blank: 1.00
+90
+Blank: 1.00
+91
+Blank: 1.00
+92
+Blank: 1.00
+93
+Blank: 1.00
+94
+Blank: 1.00
+95
+Blank: 1.00
+96
+Blank: 1.00
+97
+Blank: 1.00
+98
+Blank: 1.00
+99
+Blank: 1.00
+100
+Blank: 1.00
+101
+Blank: 1.00
+102
+Blank: 1.00
+103
+Blank: 1.00
+104
+Blank: 1.00
+105
+Blank: 1.00
+106
+Blank: 1.00
+107
+Blank: 1.00
+108
+Blank: 1.00
+109
+Blank: 1.00
+110
+Blank: 1.00
+111
+Blank: 1.00
+112
+Blank: 1.00
+113
+Blank: 1.00
+114
+Blank: 1.00
+115
+Blank: 1.00
+116
+Blank: 1.00
+117
+Blank: 1.00
+118
+Blank: 1.00
+119
+Blank: 1.00
+120
+Blank: 1.00
+121
+Blank: 1.00
+122
+Blank: 1.00
+123
+Blank: 1.00
+124
+Blank: 1.00
+125
+Blank: 1.00
+126
+Blank: 1.00
+127
+Blank: 1.00
+128
+Blank: 1.00
+129
+Blank: 1.00
+130
+Blank: 1.00
+131
+Blank: 1.00
+132
+Blank: 1.00
+133
+Blank: 1.00
+134
+Blank: 1.00
+135
+Blank: 1.00
+136
+Blank: 1.00
+137
+Blank: 1.00
+138
+Blank: 1.00
+139
+Blank: 1.00
+140
+Blank: 1.00
+141
+Blank: 1.00
+142
+Blank: 1.00
+143
+Blank: 1.00
+144
+Blank: 1.00
+145
+Blank: 1.00
+146
+Blank: 1.00
+147
+Blank: 1.00
+148
+Blank: 1.00
+149
+Blank: 1.00
+150
+Blank: 1.00
+151
+Blank: 1.00
+152
+Blank: 1.00
+153
+Blank: 1.00
+154
+Blank: 1.00
+155
+Blank: 1.00
+156
+Blank: 1.00
+157
+Blank: 1.00
+158
+Blank: 1.00
+159
+Blank: 1.00
+160
+Blank: 1.00
+161
+Blank: 1.00
+162
+Blank: 1.00
+163
+Blank: 1.00
+164
+Blank: 1.00
+165
+Blank: 1.00
+166
+Blank: 1.00
+167
+Blank: 1.00
+168
+Blank: 1.00
+169
+Blank: 1.00
+170
+Blank: 1.00
+171
+Blank: 1.00
+172
+Blank: 1.00
+173
+Blank: 1.00
+174
+Blank: 1.00
+175
+Blank: 1.00
+176
+Blank: 1.00
+177
+Blank: 1.00
+178
+Blank: 1.00
+179
+Blank: 1.00
+180
+Blank: 1.00
+181
+Blank: 1.00
+182
+Blank: 1.00
+183
+Blank: 1.00
+184
+Blank: 1.00
+185
+Blank: 1.00
+186
+Blank: 1.00
+187
+Blank: 1.00
+188
+Blank: 1.00
+189
+Blank: 1.00
+190
+Blank: 1.00
+191
+Blank: 1.00
+192
+Blank: 1.00
+193
+Blank: 1.00
+194
+Blank: 1.00
+195
+Blank: 1.00
+196
+Blank: 1.00
+197
+Blank: 1.00
+198
+Blank: 1.00
+199
+Blank: 1.00
+200
+Blank: 1.00
+201
+Blank: 1.00
+202
+Blank: 1.00
+203
+Blank: 1.00
+204
+Blank: 1.00
+205
+Blank: 1.00
+206
+Blank: 1.00
+207
+Blank: 1.00
+208
+Blank: 1.00
+209
+Blank: 1.00
+210
+Blank: 1.00
+211
+Blank: 1.00
+212
+Blank: 1.00
+213
+Blank: 1.00
+214
+Blank: 1.00
+215
+Blank: 1.00
+216
+Blank: 1.00
+217
+Blank: 1.00
+218
+Blank: 1.00
+219
+Blank: 1.00
+220
+Blank: 1.00
+221
+Blank: 1.00
+222
+Blank: 1.00
+223
+Blank: 1.00
+224
+Blank: 1.00
+225
+Blank: 1.00
+226
+Blank: 1.00
+227
+Blank: 1.00
+228
+Blank: 1.00
+229
+Blank: 1.00
+230
+Blank: 1.00
+231
+Blank: 1.00
+232
+Blank: 1.00
+233
+Blank: 1.00
+234
+Blank: 1.00
+235
+Blank: 1.00
+236
+Blank: 1.00
+237
+Blank: 1.00
+238
+Blank: 1.00
+239
+Blank: 1.00
+240
+Blank: 1.00
+241
+Blank: 1.00
+242
+Blank: 1.00
+243
+Blank: 1.00
+244
+Blank: 1.00
+245
+Blank: 1.00
+246
+Blank: 1.00
+247
+Blank: 1.00
+248
+Blank: 1.00
+249
+Blank: 1.00
+250
+Blank: 1.00
+251
+Blank: 1.00
+252
+Blank: 1.00
+253
+Blank: 1.00
+254
+Blank: 1.00
+255
+Blank: 1.00
+256
+Blank: 1.00
+257
+Blank: 1.00
+258
+Blank: 1.00
+259
+Blank: 1.00
+260
+Blank: 1.00
+261
+Blank: 1.00
+262
+Blank: 1.00
+263
+Blank: 1.00
+264
+Blank: 1.00
+265
+Blank: 1.00
+266
+Blank: 1.00
+267
+Blank: 1.00
+268
+Blank: 1.00
+269
+Blank: 1.00
+270
+Blank: 1.00
+271
+Blank: 1.00
+272
+Blank: 1.00
+273
+Blank: 1.00
+274
+Blank: 1.00
+275
+Blank: 1.00
+276
+Blank: 1.00
+277
+Blank: 1.00
+278
+Blank: 1.00
+279
+Blank: 1.00
+280
+Blank: 1.00
+281
+Blank: 1.00
+282
+Blank: 1.00
+283
+Blank: 1.00
+284
+Blank: 1.00
+285
+Blank: 1.00
+286
+Blank: 1.00
+287
+Blank: 1.00
+288
+Blank: 1.00
+289
+Blank: 1.00
+290
+Blank: 1.00
+291
+Blank: 1.00
+292
+Blank: 1.00
+293
+Blank: 1.00
+294
+Blank: 1.00
+295
+Blank: 1.00
+296
+Blank: 1.00
+297
+Blank: 1.00
+298
+Blank: 1.00
+299
+Blank: 1.00
+300
+Blank: 1.00
+301
+Blank: 1.00
+302
+Blank: 1.00
+303
+Blank: 1.00
+304
+Blank: 1.00
+305
+Blank: 1.00
+306
+Blank: 1.00
+307
+Blank: 1.00
+308
+Blank: 1.00
+309
+Blank: 1.00
+310
+Blank: 1.00
+311
+Blank: 1.00
+312
+Blank: 1.00
+313
+Blank: 1.00
+314
+Blank: 1.00
+315
+Blank: 1.00
+316
+Blank: 1.00
+317
+Blank: 1.00
+318
+Blank: 1.00
+319
+Blank: 1.00
+320
+Blank: 1.00
+321
+Blank: 1.00
+322
+Blank: 1.00
+323
+Blank: 1.00
+324
+Blank: 1.00
+325
+Blank: 1.00
+326
+Blank: 1.00
+327
+Blank: 1.00
+328
+Blank: 1.00
+329
+Blank: 1.00
+330
+Blank: 1.00
+331
+Blank: 1.00
+332
+Blank: 1.00
+333
+Blank: 1.00
+334
+Blank: 1.00
+335
+Blank: 1.00
+336
+Blank: 1.00
+337
+Blank: 1.00
+338
+Blank: 1.00
+339
+Blank: 1.00
+340
+Blank: 1.00
+341
+Blank: 1.00
+342
+Blank: 1.00
+343
+Blank: 1.00
+344
+Blank: 1.00
+345
+Blank: 1.00
+346
+Blank: 1.00
+347
+Blank: 1.00
+348
+Blank: 1.00
+349
+Blank: 1.00
+350
+Blank: 1.00
+351
+Blank: 1.00
+352
+Blank: 1.00
+353
+Blank: 1.00
+354
+Blank: 1.00
+355
+Blank: 1.00
+356
+Blank: 1.00
+357
+Blank: 1.00
+358
+Blank: 1.00
+359
+Blank: 1.00
+360
+Blank: 1.00
+361
+Blank: 1.00
+362
+Blank: 1.00
+363
+Blank: 1.00
+364
+Blank: 1.00
+365
+Blank: 1.00
+366
+Blank: 1.00
+367
+Blank: 1.00
+368
+Blank: 1.00
+369
+Blank: 1.00
+370
+Blank: 1.00
+371
+Blank: 1.00
+372
+Blank: 1.00
+373
+Blank: 1.00
+374
+Blank: 1.00
+375
+Blank: 1.00
+376
+Blank: 1.00
+377
+Blank: 1.00
+378
+Blank: 1.00
+379
+Blank: 1.00
+380
+Blank: 1.00
+381
+Blank: 1.00
+382
+Blank: 1.00
+383
+Blank: 1.00
+384
+Blank: 1.00
+385
+Blank: 1.00
+386
+Blank: 1.00
+387
+Blank: 1.00
+388
+Blank: 1.00
+389
+Blank: 1.00
+390
+Blank: 1.00
+391
+Blank: 1.00
+392
+Blank: 1.00
+393
+Blank: 1.00
+394
+Blank: 1.00
+395
+Blank: 1.00
+396
+Blank: 1.00
+397
+Blank: 1.00
+398
+Blank: 1.00
+399
+Blank: 1.00
+400
+Blank: 1.00
+401
+Blank: 1.00
+402
+Blank: 1.00
+403
+Blank: 1.00
+404
+Blank: 1.00
+405
+Blank: 1.00
+406
+Blank: 1.00
+407
+Blank: 1.00
+408
+Blank: 1.00
+409
+Blank: 1.00
+410
+Blank: 1.00
+411
+Blank: 1.00
+412
+Blank: 1.00
+413
+Blank: 1.00
+414
+Blank: 1.00
+415
+Blank: 1.00
+416
+Blank: 1.00
+417
+Blank: 1.00
+418
+Blank: 1.00
+419
+Blank: 1.00
+420
+Blank: 1.00
+421
+Blank: 1.00
+422
+Blank: 1.00
+423
+Blank: 1.00
+424
+Blank: 1.00
+425
+Blank: 1.00
+426
+Blank: 1.00
+427
+Blank: 1.00
+428
+Blank: 1.00
+429
+Blank: 1.00
+430
+Blank: 1.00
+431
+Blank: 1.00
+432
+Blank: 1.00
+433
+Blank: 1.00
+434
+Blank: 1.00
+435
+Blank: 1.00
+436
+Blank: 1.00
+437
+Blank: 1.00
+438
+Blank: 1.00
+439
+Blank: 1.00
+440
+Blank: 1.00
+441
+Blank: 1.00
+442
+Blank: 1.00
+443
+Blank: 1.00
+444
+Blank: 1.00
+445
+Blank: 1.00
+446
+Blank: 1.00
+447
+Blank: 1.00
+448
+Blank: 1.00
+449
+Blank: 1.00
+450
+Blank: 1.00
+451
+Blank: 1.00
+452
+Blank: 1.00
+453
+Blank: 1.00
+454
+Blank: 1.00
+455
+Blank: 1.00
+456
+Blank: 1.00
+457
+Blank: 1.00
+458
+Blank: 1.00
+459
+Blank: 1.00
+460
+Blank: 1.00
+461
+Blank: 1.00
+462
+Blank: 1.00
+463
+Blank: 1.00
+464
+Blank: 1.00
+465
+Blank: 1.00
+466
+Blank: 1.00
+467
+Blank: 1.00
+468
+Blank: 1.00
+469
+Blank: 1.00
+470
+Blank: 1.00
+471
+Blank: 1.00
+472
+Blank: 1.00
+473
+Blank: 1.00
+474
+Blank: 1.00
+475
+Blank: 1.00
+476
+Blank: 1.00
+477
+Blank: 1.00
+478
+Blank: 1.00
+479
+Blank: 1.00
+480

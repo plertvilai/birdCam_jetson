@@ -17,7 +17,7 @@ from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 from tensorflow.python.saved_model import tag_constants
 from scipy import stats
 
-className = ['Sparrow','Junco','Towhee','Blank']
+
 
 #-------------General Functions-----------------#
 def gstreamer_pipeline (capture_width=3280, capture_height=2464, display_width=1280, display_height=720, framerate=20, flip_method=0) :   
@@ -35,7 +35,7 @@ def gstreamer_pipeline (capture_width=3280, capture_height=2464, display_width=1
 
 #-------------BirdCam Class-----------------#
 class birdCam():
-	def __init__(self,imDim=(1280,720),fps=30,flip=0, scale=2, thresh=50,maxImSet = 10):
+	def __init__(self,imDim=(1280,720),fps=30,flip=0, scale=2, thresh=50,maxImSet = 10,className = ['Sparrow','Junco','Towhee','Blank']):
 		# Gstreamer pipeline from camera setting
 		self.gstream = gstreamer_pipeline(capture_width=imDim[0], capture_height=imDim[1],framerate=fps,flip_method=flip)
 
@@ -52,8 +52,10 @@ class birdCam():
 		self.bgTime = time.time()
 
 		self.im_array = []
+		self.data_array = np.empty((0,2)) # data array in form [species,confidence] for each row
 		self.maxImSet = maxImSet
 
+		self.className = className
 
 		# flags
 		self.flags = [False,False,False] # feeder_flag, bird_flag, capture_flag
@@ -103,6 +105,9 @@ class birdCam():
 		ind = np.nonzero(im_open)
 		self.xlim = [np.min(ind[1])+int(w*0.2) ,np.max(ind[1])+int(w*0.2)]
 		return self.xlim
+
+	def getRoi(self,frame):
+		return frame[:,self.xlim[0]:self.xlim[1]]
 
 	def threshImage(self,frame,otsu=True):
 		# crop image to region of interest only
@@ -158,11 +163,33 @@ class birdCam():
 		else:
 			return self.im_array[n]
 
+	#---------- Data array handler ------------#
+	def resetDataArray(self):
+		self.data_array = np.empty((0,2))
+
+	def appendDataArray(self,data):
+		self.data_array = np.append(self.data_array, data, axis=0)
+
+	def sizeDataArray(self):
+		return self.data_array.shape[0]
+
+	def modeDataArray(self):
+		m = stats.mode(self.data_array[:,0])
+		species = m[0][0]
+		conf = self.data_array[:,1]
+		conf = conf[self.data_array[:,0]==species]
+		confidence = np.mean(conf)
+		return species,confidence
+
+	def isBird(self,species):
+		return not species==(len(self.className)-1)
+
 class birdCam_trt(birdCam):
-	def __init__(self,model_path):
+	def __init__(self,model_path,className = ['Sparrow','Junco','Towhee','Blank'],output_decoder = [0,1,2,3]):
 		# inheriting properties from the main birdCam
-		birdCam.__init__(self,imDim=(1280,720),fps=30,flip=0, scale=2, thresh=50,maxImSet = 10)
+		birdCam.__init__(self,imDim=(1280,720),fps=30,flip=0, scale=2, thresh=50,maxImSet = 10,className=className)
 		self.model_path = model_path
+		self.output_decoder = output_decoder
 
 	def initCNN(self,init_im_path=None):
 		'''Initialize TensorFlow CNN model.'''
@@ -205,8 +232,12 @@ class birdCam_trt(birdCam):
 		#y_pred = labeling['predictions'].numpy()
 		y_pred = labeling[self.outputLayer].numpy()
 		ind = np.argmax(y_pred)
-		print("%s: %.2f"%(className[ind],y_pred[0][ind]))
-		return ind,y_pred[0][ind]
+		ind2 = self.decodeOutput(ind)
+		print("%s: %.2f"%(self.className[ind2],y_pred[0][ind]))
+		return ind2,y_pred[0][ind]
+
+	def decodeOutput(self,ind):
+		return self.output_decoder[ind]
 
 	def inferSet(self):
 		y_array = np.array([])
@@ -263,7 +294,7 @@ class birdCam_tflite(birdCam):
 		output_data = self.interpreter.get_tensor(self.output_details[0]['index'])
 		results = np.squeeze(output_data)
 		ind = np.argmax(results)
-		print("%s: %.2f"%(className[ind],results[ind]))
+		print("%s: %.2f"%(self.className[ind],results[ind]))
 		return ind,results[ind]
 
 	def inferSet(self):
