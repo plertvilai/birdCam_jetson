@@ -103,7 +103,10 @@ class birdCam():
 		se = cv2.getStructuringElement(cv2.MORPH_RECT,(6,6))
 		im_open = cv2.morphologyEx(bgct, cv2.MORPH_OPEN, se)
 		ind = np.nonzero(im_open)
-		self.xlim = [np.min(ind[1])+int(w*0.2) ,np.max(ind[1])+int(w*0.2)]
+		try:
+			self.xlim = [np.min(ind[1])+int(w*0.2) ,np.max(ind[1])+int(w*0.2)]
+		except:
+			print("Error calibrating background. Reusing the old background.")
 		return self.xlim
 
 	def getRoi(self,frame):
@@ -233,7 +236,7 @@ class birdCam_trt(birdCam):
 		y_pred = labeling[self.outputLayer].numpy()
 		ind = np.argmax(y_pred)
 		ind2 = self.decodeOutput(ind)
-		print("%s: %.2f"%(self.className[ind2],y_pred[0][ind]))
+		print("%.2f - %s: %.2f"%(time.time(),self.className[ind2],y_pred[0][ind]))
 		return ind2,y_pred[0][ind]
 
 	def decodeOutput(self,ind):
