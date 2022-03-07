@@ -1,13 +1,13 @@
 # BirdCam with Jetson Nano
 
-<img src="images/birdCam_diagram.PNG" alt="birdCam_diagram" width="500"/>
+<img src="images/birdCam_diagram.PNG" alt="birdCam_diagram" width="700"/>
 
 BirdCam is a framework for real-time classification of urban faunas. It was initially developed to classify common urban bird species found in gardens of Southern California. The framework utilizes both traditional image processing and a machine learning approach to perform real-time classification on an Nvidia Jetson Nano. 
 
 
 # Hardware Requirements
 
-<img src="images/jetson_setup.PNG" alt="jetson_setup" width="500"/>
+<img src="images/jetson_setup.PNG" alt="jetson_setup" width="700"/>
 <img src="images/birdCam_setup.PNG" alt="birdCam_setup" height="500"/>
 
 1. Nvidia Jetson Nano with suitable components
