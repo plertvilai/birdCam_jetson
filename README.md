@@ -8,7 +8,7 @@ BirdCam is a framework for real-time classification of urban faunas. It was init
 # Hardware Requirements
 
 <img src="images/jetson_setup.PNG" alt="jetson_setup" width="500"/>
-<img src="images/birdCam_diagram.PNG" alt="birdCam_diagram" height="500"/>
+<img src="images/birdCam_setup.PNG" alt="birdCam_setup" height="500"/>
 
 1. Nvidia Jetson Nano with suitable components
 	- 5V power supply (>10W)
@@ -50,5 +50,5 @@ To run the model on a Jetson Nano, we have to optimize the Tensorflow model by c
 ![tensorflow_workflow](images/tensorflow_workflow.PNG)
 
 When a bird comes to visit the feeder, the model will yield an inference with very low confidence during the transition. The posture of the bird during foraging can also affect the inference. As a result, the final recorded inference is the mode of all frames during the presence of each bird.
-<img src="images/model_confidence.PNG" alt="model_confidence" width="500"/>
-<img src="images/final_inference.PNG" alt="final_inference" width="500"/>
+<img src="images/model_confidence.PNG" alt="model_confidence" width="600"/>
+<img src="images/final_inference.PNG" alt="final_inference" width="600"/>
