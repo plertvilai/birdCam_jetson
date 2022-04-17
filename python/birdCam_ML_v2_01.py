@@ -39,7 +39,7 @@ def uploadFile(filename,url):
             'User-Agent': 'My User Agent 1.0',
         }
     )
-    data = {'password':'oceanleaf123456', 'submit':'submit','ftype':'image'}
+    data = {'password':'******', 'submit':'submit','ftype':'image'}
     files = {'my_file':(filename, open(filename, 'rb'))}    
     try:
         r = requests.post(url, data=data, files=files,headers = headers,timeout=5)
@@ -104,7 +104,7 @@ terminate = False
 signal.signal(signal.SIGINT, terminateProcess)
 
 # url for uploading image
-urlFile = 'http://www.oceanleaf.org/birdCam/upload.php'
+urlFile = '******'
 
 print("-------BirdCam program----------")
 
